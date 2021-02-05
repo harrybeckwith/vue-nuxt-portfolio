@@ -1,13 +1,5 @@
 <template>
-  <div class="container">
-    <a href="https://dev.to/hjames">
-      <img
-        src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
-        alt="Harry J Beckwith's DEV Community Profile"
-        height="30"
-        width="30"
-      />
-    </a>
+  <div class="flex justify-between">
     <card-component
       v-for="topic in blogTopics"
       :key="topic.title"
@@ -26,7 +18,8 @@ export default {
     return {
       blogTopics: [
         { title: "vue", logo: require("~/assets/images/logos/vue.png") },
-        { title: "php", logo: require("~/assets/images/logos/vue.png") }
+        { title: "php", logo: require("~/assets/images/logos/vue.png") },
+        { title: "scss", logo: require("~/assets/images/logos/vue.png") }
       ]
     };
   },
@@ -56,5 +49,3 @@ export default {
   }
 };
 </script>
-
-<style></style>

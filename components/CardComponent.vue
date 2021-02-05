@@ -1,8 +1,8 @@
 <template>
-  <div class="card">
+  <div class="flex justify-center shadow pt-5 pb-5 ml-5 mr-5 mt-10 w-1/3">
     <nuxt-link :to="`/posts/${title}`">
-      <h3 class="card__title">{{ title }}</h3>   
-      <img :src="imageUrl" />
+      <h2 class="font-semibold text-3xl text-center capitalize">{{ title }}</h2>
+      <img :src="imageUrl" width="150px" />
     </nuxt-link>
   </div>
 </template>
@@ -22,11 +22,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.card {
-  &__title {
-    color: red;
-  }
-}
-</style>

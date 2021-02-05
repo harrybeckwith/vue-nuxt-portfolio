@@ -1,8 +1,9 @@
 <template>
   <div>
     <Header />
-    <nav>nav</nav>
-    <Nuxt />
+    <div class="max-w-screen-sm m-auto">
+      <Nuxt />
+    </div>
   </div>
 </template>
 
