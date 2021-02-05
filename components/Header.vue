@@ -4,8 +4,11 @@
       <li class='mr-4'>
         <nuxt-link to="/">Home</nuxt-link>
       </li>
+      <li class='mr-4'>
+        <nuxt-link to="/about">About</nuxt-link>
+      </li>
       <li>
-        <nuxt-link to="/users">Users</nuxt-link>
+        <nuxt-link to="/portfolio">Portfolio</nuxt-link>
       </li>
     </ul>
   </header>

@@ -22,7 +22,7 @@
               </p>
             </div>
           </div>
-          <div>
+          <div class="ml-4">
             <img :src="post.cover_image" width="250px" />
           </div>
         </div>
