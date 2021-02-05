@@ -1,5 +1,13 @@
 <template>
   <div class="container">
+    <a href="https://dev.to/hjames">
+      <img
+        src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+        alt="Harry J Beckwith's DEV Community Profile"
+        height="30"
+        width="30"
+      />
+    </a>
     <card-component
       v-for="topic in blogTopics"
       :key="topic.title"
@@ -17,8 +25,8 @@ export default {
   data() {
     return {
       blogTopics: [
-        { title: "github", logo: require("~/assets/images/logos/vue.png") },
-        { title: "php", logo: require("~/assets/images/logos/vue.png") },
+        { title: "vue", logo: require("~/assets/images/logos/vue.png") },
+        { title: "php", logo: require("~/assets/images/logos/vue.png") }
       ]
     };
   },
@@ -34,7 +42,7 @@ export default {
   methods: {
     ...mapActions(["storeDevToData"]),
     callDevTo() {
-      fetch("https://dev.to/api/articles?username=olawanle_joel")
+      fetch("https://dev.to/api/articles?username=hjames")
         .then(response => response.json())
         .then(data => {
           console.log(data);
